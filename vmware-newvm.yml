@@ -9,7 +9,7 @@
       password: '{{ esxi_password }}'   
       validate_certs: no     
   vars_files: 
-    NewWindowsVM-vars.yml
+    vmware-newvm-vars.yml
   tasks: 
   - name: Add ESXi to Ansible Hosts for SSH
     add_host:
