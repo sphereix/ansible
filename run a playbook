@@ -1,3 +1,13 @@
 ansible-playbook playbook-name.yml -kK
 
 *-kK prompts for SSH credentials*
+
+configure hosts file like this:
+
+
+[linux]
+192.168.200.102
+
+[linux:vars]
+ansible_user=root
+ansible_password=somepass
